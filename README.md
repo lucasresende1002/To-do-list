@@ -1,7 +1,3 @@
-Ficou ótimo! Essa resposta visual de riscar a tarefa é essencial para a experiência do usuário (UX), pois dá aquela sensação de "dever cumprido".
-
-Atualizei o README.md para incluir essa funcionalidade específica na seção de recursos e no guia de uso.
-
 📝 To-Do List por Datas (Versão Final)
 Uma aplicação de gerenciamento de tarefas robusta e intuitiva que organiza seus afazeres em colunas cronológicas. O projeto combina uma interface moderna em tons de azul profundo com funcionalidades avançadas de feedback visual.
 
