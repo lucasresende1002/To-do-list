@@ -28,7 +28,7 @@ function formatDateDisplay(isoDate){
     return `${parts[2]}/${parts[1]}/${parts[0]}`;
 }
 
-function adicionarTarefa(){
+function addTask(){
     const input = document.getElementById('tarefaInput');
     const dateInput = document.getElementById('tarefaDate');
     const tarefa = input.value.trim();
