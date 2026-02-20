@@ -215,6 +215,7 @@ function renderColumns(){
                 const input = document.createElement('input');
                 input.className = 'task-input-edit';
                 input.value = task.text;
+                input.type = 'text';
 
                 // date input for moving while editing
                 const dateEditor = document.createElement('input');
@@ -224,18 +225,20 @@ function renderColumns(){
 
                 // build a small wrapper
                 const editWrapper = document.createElement('div');
-                editWrapper.style.display = 'flex';
-                editWrapper.style.gap = '6px';
-                editWrapper.style.alignItems = 'center';
+                editWrapper.className = 'edit-wrapper';
                 editWrapper.appendChild(input);
                 editWrapper.appendChild(dateEditor);
 
                 taskDiv.replaceChild(editWrapper, spanText);
+                taskDiv.classList.add('editing');
                 editBtn.textContent = '💾';
+                input.focus();
+                input.select();
                 // save handler
                 editBtn.onclick = () => {
                     const newText = input.value.trim();
                     const newDate = dateEditor.value;
+                    taskDiv.classList.remove('editing');
                     if(newText) saveEdit(date, task.id, newText);
                     if(newDate && newDate !== date) moveTask(date, task.id, newDate);
                 };

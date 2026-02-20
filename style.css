@@ -172,6 +172,40 @@ h1{
     align-items: center;
 }
 
+.task-item.editing{
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.task-item.editing .edit-wrapper{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: stretch;
+    padding: 8px 0;
+}
+
+.edit-wrapper{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+}
+
+.task-input-edit{
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.task-date-input{
+    box-sizing: border-box;
+    width: 100%;
+}
+
 /* estilo para tarefas concluídas */
 .task-completed{
     text-decoration: line-through;
